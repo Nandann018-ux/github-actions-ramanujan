@@ -11,13 +11,12 @@ jobs :
   
   print_ubuntu: 
     runs-on : ubuntu-latest
-    steps : 
-      - name : Print Hello from Ubuntu
-        run : echo "Hello from Ubuntu"
-    
     defaults:
       run:
         working-directory: backend
-      steps : 
+    steps : 
+      - name : Print Hello from Ubuntu
+        run : echo "Hello from Ubuntu"
       - name : Install dependencies
         run : npm ci 
+        
