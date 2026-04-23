@@ -8,4 +8,9 @@ jobs :
     steps :
       - name : Print Hello World 
         run : echo "Hello World"
-      
+  
+  print : 
+    runs-on : ubuntu-latest
+    steps : 
+      - name : Print Hello from Ubuntu
+        run : echo "Hello from Ubuntu"
