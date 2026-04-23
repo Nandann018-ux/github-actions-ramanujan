@@ -14,3 +14,10 @@ jobs :
     steps : 
       - name : Print Hello from Ubuntu
         run : echo "Hello from Ubuntu"
+    
+    defaults:
+      run:
+        working-directory: backend
+      steps : 
+      - name : Install dependencies
+        run : npm ci 
